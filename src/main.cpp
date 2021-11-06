@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial miBT(10, 11); // pin 10 in RX bluetooth, pin 11 in TX bluetooth
+SoftwareSerial miBT(10, 11); // pin 10 in TX bluetooth, pin 11 in RX bluetooth
 
 char DATO = 0;
 
