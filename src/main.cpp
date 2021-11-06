@@ -13,7 +13,7 @@ void setup()
 
 void loop()
 {
-    //When receive data from app
+    //When receive data from app, app is BlueTooth Serial Controller
     if (miBT.available())
     { 
         char DATO = miBT.read();

@@ -11,9 +11,20 @@ una vez quitado el voltaje mantener pulsado el boton del bluetooh, sin soltarlo 
 
 COMANDOS:
 
-AT     Comando de prueba, debe responder con OK\r\n
+AT     Comando de prueba, debe responder con ok
+
+--Consulta de informacion:
+AT+PSWD?  ver pin que tiene
+AT+ROLE?  ver modo en el que esta, 0 esclavo, 1 maestro
+AT+UART?  ver la velocidad
+AT+VERSION?  Obtener la versión del firmware
+
+
+--Configurar
+AT+ORGL  para poner los valores de fabrica
+AT+NAME=BT  se llmara bt el modulo bluetooh para encontrarlo
+AT+PSWD=1234  establecer un pin concreto
 AT+ROLE=1      Comando para colocar el módulo en modo Maestro (Master)
-AT+ROLE=0      Comando para colocar el módulo en modo Esclavo (Slave), poner este para recibir datos
-AT+VERSION?     Obtener la versión del firmware
+AT+ROLE=0      Comando para colocar el módulo en modo Esclavo (Slave), poner este para recibir datos 
 AT+UART=9600,0,0     Configurar el modo de funcionamiento del puerto serie en “modo puente”
 AT+RESET     Para salir y ponerlo en modo emparejamiento
