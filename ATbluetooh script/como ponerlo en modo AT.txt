@@ -1,0 +1,19 @@
+
+
+Para pasar a modo configuracion del Bluetooh:
+
+1. Conectar el gnd, conectar el voltaje a 3.3V, y conectar el RX en pin 11 y TX en pin 10
+2. cargar el codigo al arduino de ATbluetooh
+3. Para pasar a modo configuracion el led debe parpadear muy lento, con todo conectado primero desconectar voltaje,
+una vez quitado el voltaje mantener pulsado el boton del bluetooh, sin soltarlo conectar voltaje, ya tendremos el modo configuracion
+(led parpadeando lento)
+4. para asegurarnos abrir serial en este momento 9600 y modo "Ambos NL & CR" y en enviar AT, debe responder ok.
+
+COMANDOS:
+
+AT     Comando de prueba, debe responder con OK\r\n
+AT+ROLE=1      Comando para colocar el módulo en modo Maestro (Master)
+AT+ROLE=0      Comando para colocar el módulo en modo Esclavo (Slave), poner este para recibir datos
+AT+VERSION?     Obtener la versión del firmware
+AT+UART=9600,0,0     Configurar el modo de funcionamiento del puerto serie en “modo puente”
+AT+RESET     Para salir y ponerlo en modo emparejamiento
