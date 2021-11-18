@@ -28,3 +28,7 @@ AT+ROLE=1      Comando para colocar el módulo en modo Maestro (Master)
 AT+ROLE=0      Comando para colocar el módulo en modo Esclavo (Slave), poner este para recibir datos 
 AT+UART=9600,0,0     Configurar el modo de funcionamiento del puerto serie en “modo puente”
 AT+RESET     Para salir y ponerlo en modo emparejamiento
+
+
+En el HM-10 el modo at es automatico, conecto el modulo igual que el otro pero en 5V y directamente cargando el script le puedo enviar 
+comandos, MUY IMPORTANTE, poner el   miBT.begin(9600) a 9600 en este caso para los comandos
